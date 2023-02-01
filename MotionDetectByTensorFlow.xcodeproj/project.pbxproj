@@ -13,9 +13,42 @@
 		87ECBDE32989FC80002B93D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87ECBDE12989FC80002B93D5 /* Main.storyboard */; };
 		87ECBDE52989FC80002B93D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87ECBDE42989FC80002B93D5 /* Assets.xcassets */; };
 		87ECBDE82989FC80002B93D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87ECBDE62989FC80002B93D5 /* LaunchScreen.storyboard */; };
+		87ECBDF4298A4730002B93D5 /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBDF3298A4730002B93D5 /* CameraFeedManager.swift */; };
+		87ECBDF7298A4772002B93D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBDF6298A4772002B93D5 /* Constants.swift */; };
+		87ECBDF9298A4779002B93D5 /* PoseEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBDF8298A4779002B93D5 /* PoseEstimator.swift */; };
+		87ECBDFB298A477F002B93D5 /* MoveNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBDFA298A477F002B93D5 /* MoveNet.swift */; };
+		87ECBDFD298A4787002B93D5 /* PoseNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBDFC298A4787002B93D5 /* PoseNet.swift */; };
+		87ECBDFF298A4790002B93D5 /* PoseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBDFE298A4790002B93D5 /* PoseData.swift */; };
+		87ECBE01298A479B002B93D5 /* PoseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE00298A479B002B93D5 /* PoseConfig.swift */; };
+		87ECBE07298A47B4002B93D5 /* movenet_lightning.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 87ECBE02298A47B2002B93D5 /* movenet_lightning.tflite */; };
+		87ECBE08298A47B4002B93D5 /* posenet.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 87ECBE03298A47B2002B93D5 /* posenet.tflite */; };
+		87ECBE09298A47B4002B93D5 /* movenet_thunder_float.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 87ECBE04298A47B3002B93D5 /* movenet_thunder_float.tflite */; };
+		87ECBE0A298A47B4002B93D5 /* movenet_lightning_float.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 87ECBE05298A47B3002B93D5 /* movenet_lightning_float.tflite */; };
+		87ECBE0B298A47B4002B93D5 /* movenet_thunder.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 87ECBE06298A47B4002B93D5 /* movenet_thunder.tflite */; };
+		87ECBE10298A4859002B93D5 /* AVCaptureDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE0F298A4859002B93D5 /* AVCaptureDeviceExtensions.swift */; };
+		87ECBE12298A4868002B93D5 /* CGSizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE11298A4868002B93D5 /* CGSizeExtensions.swift */; };
+		87ECBE14298A4880002B93D5 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE13298A4880002B93D5 /* DataExtensions.swift */; };
+		87ECBE16298A488F002B93D5 /* CVPixelBufferExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE15298A488F002B93D5 /* CVPixelBufferExtensions.swift */; };
+		87ECBE1A298A490F002B93D5 /* PoseDetectorInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE19298A490F002B93D5 /* PoseDetectorInterpreter.swift */; };
+		87ECBE2D298A4924002B93D5 /* PushUp.c in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE1E298A4924002B93D5 /* PushUp.c */; };
+		87ECBE2E298A4924002B93D5 /* PushUpHold.c in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE1F298A4924002B93D5 /* PushUpHold.c */; };
+		87ECBE2F298A4924002B93D5 /* Squat.c in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE21298A4924002B93D5 /* Squat.c */; };
+		87ECBE30298A4924002B93D5 /* SquatHold.c in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE22298A4924002B93D5 /* SquatHold.c */; };
+		87ECBE31298A4924002B93D5 /* PoseUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE27298A4924002B93D5 /* PoseUtil.c */; };
+		87ECBE32298A4924002B93D5 /* PoseHoldUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE28298A4924002B93D5 /* PoseHoldUtil.c */; };
+		87ECBE33298A4924002B93D5 /* Plank.c in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE2C298A4924002B93D5 /* Plank.c */; };
+		87ECBE36298A495A002B93D5 /* BodyScannerInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE35298A495A002B93D5 /* BodyScannerInterpreter.swift */; };
+		87ECBE3C298A4B77002B93D5 /* KeyPointExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE3B298A4B77002B93D5 /* KeyPointExtensions.swift */; };
+		87ECBE3E298A4B99002B93D5 /* FloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE3D298A4B99002B93D5 /* FloatExtensions.swift */; };
+		87ECBE40298A4BA6002B93D5 /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE3F298A4BA6002B93D5 /* CGFloatExtensions.swift */; };
+		87ECBE42298A4BC4002B93D5 /* CGPointExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECBE41298A4BC4002B93D5 /* CGPointExtensions.swift */; };
+		EDF271E00C1C148DE993BE6F /* libPods-MotionDetectByTensorFlow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 012B50BCE473979735C48BB3 /* libPods-MotionDetectByTensorFlow.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		012B50BCE473979735C48BB3 /* libPods-MotionDetectByTensorFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MotionDetectByTensorFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F9B98F73E17A29D6FBDAB1 /* Pods-MotionDetectByTensorFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionDetectByTensorFlow.debug.xcconfig"; path = "Target Support Files/Pods-MotionDetectByTensorFlow/Pods-MotionDetectByTensorFlow.debug.xcconfig"; sourceTree = "<group>"; };
+		814ACB52577D7572BEFBA62E /* Pods-MotionDetectByTensorFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionDetectByTensorFlow.release.xcconfig"; path = "Target Support Files/Pods-MotionDetectByTensorFlow/Pods-MotionDetectByTensorFlow.release.xcconfig"; sourceTree = "<group>"; };
 		87ECBDD82989FC7F002B93D5 /* MotionDetectByTensorFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionDetectByTensorFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87ECBDDB2989FC80002B93D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87ECBDDD2989FC80002B93D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +57,43 @@
 		87ECBDE42989FC80002B93D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87ECBDE72989FC80002B93D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87ECBDE92989FC80002B93D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87ECBDF3298A4730002B93D5 /* CameraFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; };
+		87ECBDF6298A4772002B93D5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		87ECBDF8298A4779002B93D5 /* PoseEstimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseEstimator.swift; sourceTree = "<group>"; };
+		87ECBDFA298A477F002B93D5 /* MoveNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveNet.swift; sourceTree = "<group>"; };
+		87ECBDFC298A4787002B93D5 /* PoseNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseNet.swift; sourceTree = "<group>"; };
+		87ECBDFE298A4790002B93D5 /* PoseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseData.swift; sourceTree = "<group>"; };
+		87ECBE00298A479B002B93D5 /* PoseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseConfig.swift; sourceTree = "<group>"; };
+		87ECBE02298A47B2002B93D5 /* movenet_lightning.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = movenet_lightning.tflite; sourceTree = "<group>"; };
+		87ECBE03298A47B2002B93D5 /* posenet.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = posenet.tflite; sourceTree = "<group>"; };
+		87ECBE04298A47B3002B93D5 /* movenet_thunder_float.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = movenet_thunder_float.tflite; sourceTree = "<group>"; };
+		87ECBE05298A47B3002B93D5 /* movenet_lightning_float.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = movenet_lightning_float.tflite; sourceTree = "<group>"; };
+		87ECBE06298A47B4002B93D5 /* movenet_thunder.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = movenet_thunder.tflite; sourceTree = "<group>"; };
+		87ECBE0F298A4859002B93D5 /* AVCaptureDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureDeviceExtensions.swift; sourceTree = "<group>"; };
+		87ECBE11298A4868002B93D5 /* CGSizeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeExtensions.swift; sourceTree = "<group>"; };
+		87ECBE13298A4880002B93D5 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		87ECBE15298A488F002B93D5 /* CVPixelBufferExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVPixelBufferExtensions.swift; sourceTree = "<group>"; };
+		87ECBE19298A490F002B93D5 /* PoseDetectorInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseDetectorInterpreter.swift; sourceTree = "<group>"; };
+		87ECBE1C298A4924002B93D5 /* PushUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushUp.h; sourceTree = "<group>"; };
+		87ECBE1D298A4924002B93D5 /* PushUpHold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushUpHold.h; sourceTree = "<group>"; };
+		87ECBE1E298A4924002B93D5 /* PushUp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PushUp.c; sourceTree = "<group>"; };
+		87ECBE1F298A4924002B93D5 /* PushUpHold.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PushUpHold.c; sourceTree = "<group>"; };
+		87ECBE21298A4924002B93D5 /* Squat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Squat.c; sourceTree = "<group>"; };
+		87ECBE22298A4924002B93D5 /* SquatHold.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SquatHold.c; sourceTree = "<group>"; };
+		87ECBE23298A4924002B93D5 /* Squat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Squat.h; sourceTree = "<group>"; };
+		87ECBE24298A4924002B93D5 /* SquatHold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquatHold.h; sourceTree = "<group>"; };
+		87ECBE26298A4924002B93D5 /* PoseHoldUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoseHoldUtil.h; sourceTree = "<group>"; };
+		87ECBE27298A4924002B93D5 /* PoseUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PoseUtil.c; sourceTree = "<group>"; };
+		87ECBE28298A4924002B93D5 /* PoseHoldUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PoseHoldUtil.c; sourceTree = "<group>"; };
+		87ECBE29298A4924002B93D5 /* PoseUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoseUtil.h; sourceTree = "<group>"; };
+		87ECBE2B298A4924002B93D5 /* Plank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plank.h; sourceTree = "<group>"; };
+		87ECBE2C298A4924002B93D5 /* Plank.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Plank.c; sourceTree = "<group>"; };
+		87ECBE35298A495A002B93D5 /* BodyScannerInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyScannerInterpreter.swift; sourceTree = "<group>"; };
+		87ECBE37298A49C0002B93D5 /* PoseDetector-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoseDetector-Bridging-Header.h"; sourceTree = "<group>"; };
+		87ECBE3B298A4B77002B93D5 /* KeyPointExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPointExtensions.swift; sourceTree = "<group>"; };
+		87ECBE3D298A4B99002B93D5 /* FloatExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatExtensions.swift; sourceTree = "<group>"; };
+		87ECBE3F298A4BA6002B93D5 /* CGFloatExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
+		87ECBE41298A4BC4002B93D5 /* CGPointExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +101,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF271E00C1C148DE993BE6F /* libPods-MotionDetectByTensorFlow.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		503F0855F45DEF41859C6B01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				012B50BCE473979735C48BB3 /* libPods-MotionDetectByTensorFlow.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87ECBDCF2989FC7F002B93D5 = {
 			isa = PBXGroup;
 			children = (
 				87ECBDDA2989FC7F002B93D5 /* MotionDetectByTensorFlow */,
 				87ECBDD92989FC7F002B93D5 /* Products */,
+				CF5BEB855814A3AF18EDE76A /* Pods */,
+				503F0855F45DEF41859C6B01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +137,7 @@
 		87ECBDDA2989FC7F002B93D5 /* MotionDetectByTensorFlow */ = {
 			isa = PBXGroup;
 			children = (
+				87ECBDEF298A46EE002B93D5 /* Pose */,
 				87ECBDDB2989FC80002B93D5 /* AppDelegate.swift */,
 				87ECBDDD2989FC80002B93D5 /* SceneDelegate.swift */,
 				87ECBDDF2989FC80002B93D5 /* ViewController.swift */,
@@ -67,6 +149,163 @@
 			path = MotionDetectByTensorFlow;
 			sourceTree = "<group>";
 		};
+		87ECBDEF298A46EE002B93D5 /* Pose */ = {
+			isa = PBXGroup;
+			children = (
+				87ECBE0E298A4837002B93D5 /* Extensions */,
+				87ECBDF5298A475F002B93D5 /* Model */,
+				87ECBDF0298A46FC002B93D5 /* Camera */,
+				87ECBDF1298A4709002B93D5 /* ML */,
+				87ECBDF2298A471B002B93D5 /* UI */,
+			);
+			path = Pose;
+			sourceTree = "<group>";
+		};
+		87ECBDF0298A46FC002B93D5 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				87ECBDF3298A4730002B93D5 /* CameraFeedManager.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		87ECBDF1298A4709002B93D5 /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				87ECBE34298A4948002B93D5 /* BodyScan */,
+				87ECBE0D298A482B002B93D5 /* PoseDetector */,
+				87ECBE0C298A4812002B93D5 /* Model */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		87ECBDF2298A471B002B93D5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		87ECBDF5298A475F002B93D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87ECBDF6298A4772002B93D5 /* Constants.swift */,
+				87ECBDF8298A4779002B93D5 /* PoseEstimator.swift */,
+				87ECBDFE298A4790002B93D5 /* PoseData.swift */,
+				87ECBE00298A479B002B93D5 /* PoseConfig.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		87ECBE0C298A4812002B93D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87ECBE05298A47B3002B93D5 /* movenet_lightning_float.tflite */,
+				87ECBE02298A47B2002B93D5 /* movenet_lightning.tflite */,
+				87ECBE04298A47B3002B93D5 /* movenet_thunder_float.tflite */,
+				87ECBE06298A47B4002B93D5 /* movenet_thunder.tflite */,
+				87ECBE03298A47B2002B93D5 /* posenet.tflite */,
+				87ECBDFA298A477F002B93D5 /* MoveNet.swift */,
+				87ECBDFC298A4787002B93D5 /* PoseNet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		87ECBE0D298A482B002B93D5 /* PoseDetector */ = {
+			isa = PBXGroup;
+			children = (
+				87ECBE37298A49C0002B93D5 /* PoseDetector-Bridging-Header.h */,
+				87ECBE19298A490F002B93D5 /* PoseDetectorInterpreter.swift */,
+				87ECBE2A298A4924002B93D5 /* Plank */,
+				87ECBE1B298A4924002B93D5 /* PushUp */,
+				87ECBE20298A4924002B93D5 /* Squat */,
+				87ECBE25298A4924002B93D5 /* Utilities */,
+			);
+			path = PoseDetector;
+			sourceTree = "<group>";
+		};
+		87ECBE0E298A4837002B93D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				87ECBE0F298A4859002B93D5 /* AVCaptureDeviceExtensions.swift */,
+				87ECBE11298A4868002B93D5 /* CGSizeExtensions.swift */,
+				87ECBE13298A4880002B93D5 /* DataExtensions.swift */,
+				87ECBE15298A488F002B93D5 /* CVPixelBufferExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		87ECBE1B298A4924002B93D5 /* PushUp */ = {
+			isa = PBXGroup;
+			children = (
+				87ECBE1C298A4924002B93D5 /* PushUp.h */,
+				87ECBE1D298A4924002B93D5 /* PushUpHold.h */,
+				87ECBE1E298A4924002B93D5 /* PushUp.c */,
+				87ECBE1F298A4924002B93D5 /* PushUpHold.c */,
+			);
+			path = PushUp;
+			sourceTree = "<group>";
+		};
+		87ECBE20298A4924002B93D5 /* Squat */ = {
+			isa = PBXGroup;
+			children = (
+				87ECBE21298A4924002B93D5 /* Squat.c */,
+				87ECBE22298A4924002B93D5 /* SquatHold.c */,
+				87ECBE23298A4924002B93D5 /* Squat.h */,
+				87ECBE24298A4924002B93D5 /* SquatHold.h */,
+			);
+			path = Squat;
+			sourceTree = "<group>";
+		};
+		87ECBE25298A4924002B93D5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				87ECBE26298A4924002B93D5 /* PoseHoldUtil.h */,
+				87ECBE27298A4924002B93D5 /* PoseUtil.c */,
+				87ECBE28298A4924002B93D5 /* PoseHoldUtil.c */,
+				87ECBE29298A4924002B93D5 /* PoseUtil.h */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		87ECBE2A298A4924002B93D5 /* Plank */ = {
+			isa = PBXGroup;
+			children = (
+				87ECBE2B298A4924002B93D5 /* Plank.h */,
+				87ECBE2C298A4924002B93D5 /* Plank.c */,
+			);
+			path = Plank;
+			sourceTree = "<group>";
+		};
+		87ECBE34298A4948002B93D5 /* BodyScan */ = {
+			isa = PBXGroup;
+			children = (
+				87ECBE3A298A4B65002B93D5 /* Extensions */,
+				87ECBE35298A495A002B93D5 /* BodyScannerInterpreter.swift */,
+			);
+			path = BodyScan;
+			sourceTree = "<group>";
+		};
+		87ECBE3A298A4B65002B93D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				87ECBE3B298A4B77002B93D5 /* KeyPointExtensions.swift */,
+				87ECBE3D298A4B99002B93D5 /* FloatExtensions.swift */,
+				87ECBE3F298A4BA6002B93D5 /* CGFloatExtensions.swift */,
+				87ECBE41298A4BC4002B93D5 /* CGPointExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF5BEB855814A3AF18EDE76A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54F9B98F73E17A29D6FBDAB1 /* Pods-MotionDetectByTensorFlow.debug.xcconfig */,
+				814ACB52577D7572BEFBA62E /* Pods-MotionDetectByTensorFlow.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +313,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87ECBDEC2989FC80002B93D5 /* Build configuration list for PBXNativeTarget "MotionDetectByTensorFlow" */;
 			buildPhases = (
+				E3D2911978D59D24444642BB /* [CP] Check Pods Manifest.lock */,
 				87ECBDD42989FC7F002B93D5 /* Sources */,
 				87ECBDD52989FC7F002B93D5 /* Frameworks */,
 				87ECBDD62989FC7F002B93D5 /* Resources */,
@@ -127,20 +367,74 @@
 			files = (
 				87ECBDE82989FC80002B93D5 /* LaunchScreen.storyboard in Resources */,
 				87ECBDE52989FC80002B93D5 /* Assets.xcassets in Resources */,
+				87ECBE09298A47B4002B93D5 /* movenet_thunder_float.tflite in Resources */,
+				87ECBE0B298A47B4002B93D5 /* movenet_thunder.tflite in Resources */,
+				87ECBE08298A47B4002B93D5 /* posenet.tflite in Resources */,
+				87ECBE0A298A47B4002B93D5 /* movenet_lightning_float.tflite in Resources */,
 				87ECBDE32989FC80002B93D5 /* Main.storyboard in Resources */,
+				87ECBE07298A47B4002B93D5 /* movenet_lightning.tflite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E3D2911978D59D24444642BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MotionDetectByTensorFlow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87ECBDD42989FC7F002B93D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87ECBE33298A4924002B93D5 /* Plank.c in Sources */,
+				87ECBE2F298A4924002B93D5 /* Squat.c in Sources */,
+				87ECBE1A298A490F002B93D5 /* PoseDetectorInterpreter.swift in Sources */,
+				87ECBDFF298A4790002B93D5 /* PoseData.swift in Sources */,
+				87ECBDF7298A4772002B93D5 /* Constants.swift in Sources */,
+				87ECBE31298A4924002B93D5 /* PoseUtil.c in Sources */,
+				87ECBE01298A479B002B93D5 /* PoseConfig.swift in Sources */,
+				87ECBE36298A495A002B93D5 /* BodyScannerInterpreter.swift in Sources */,
+				87ECBDFB298A477F002B93D5 /* MoveNet.swift in Sources */,
+				87ECBE10298A4859002B93D5 /* AVCaptureDeviceExtensions.swift in Sources */,
 				87ECBDE02989FC80002B93D5 /* ViewController.swift in Sources */,
 				87ECBDDC2989FC80002B93D5 /* AppDelegate.swift in Sources */,
+				87ECBDF4298A4730002B93D5 /* CameraFeedManager.swift in Sources */,
 				87ECBDDE2989FC80002B93D5 /* SceneDelegate.swift in Sources */,
+				87ECBDFD298A4787002B93D5 /* PoseNet.swift in Sources */,
+				87ECBE14298A4880002B93D5 /* DataExtensions.swift in Sources */,
+				87ECBE42298A4BC4002B93D5 /* CGPointExtensions.swift in Sources */,
+				87ECBE12298A4868002B93D5 /* CGSizeExtensions.swift in Sources */,
+				87ECBDF9298A4779002B93D5 /* PoseEstimator.swift in Sources */,
+				87ECBE2D298A4924002B93D5 /* PushUp.c in Sources */,
+				87ECBE30298A4924002B93D5 /* SquatHold.c in Sources */,
+				87ECBE40298A4BA6002B93D5 /* CGFloatExtensions.swift in Sources */,
+				87ECBE16298A488F002B93D5 /* CVPixelBufferExtensions.swift in Sources */,
+				87ECBE2E298A4924002B93D5 /* PushUpHold.c in Sources */,
+				87ECBE3E298A4B99002B93D5 /* FloatExtensions.swift in Sources */,
+				87ECBE3C298A4B77002B93D5 /* KeyPointExtensions.swift in Sources */,
+				87ECBE32298A4924002B93D5 /* PoseHoldUtil.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +576,7 @@
 		};
 		87ECBDED2989FC80002B93D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54F9B98F73E17A29D6FBDAB1 /* Pods-MotionDetectByTensorFlow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +590,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +599,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jw.nam.MotionDetectByTensorFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MotionDetectByTensorFlow/Pose/ML/PoseDetector/PoseDetector-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,6 +607,7 @@
 		};
 		87ECBDEE2989FC80002B93D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814ACB52577D7572BEFBA62E /* Pods-MotionDetectByTensorFlow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +621,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,6 +630,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jw.nam.MotionDetectByTensorFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MotionDetectByTensorFlow/Pose/ML/PoseDetector/PoseDetector-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
